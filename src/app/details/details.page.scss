@@ -1,0 +1,74 @@
+.header-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px; /* Penambahan margin bottom untuk pemisahan dengan elemen berikutnya */
+  }
+  
+  .header-image .author-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .title-label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; /* Warna teks judul */
+    margin-bottom: 10px; /* Penambahan margin bottom untuk pemisahan dengan deskripsi */
+  }
+  
+  .description-label {
+    color: #ffffff; /* Warna teks deskripsi */
+  }
+  
+  ion-item {
+    --border-color: #007bff; /* Mengubah warna border bawaan ion-item */
+  }
+  
+  ion-label {
+    color: #000000; /* Warna teks hitam */
+  }
+  ion-button {
+    --border-width: 2px; /* Ketebalan border */
+    --border-color: transparent; /* Warna border transparan */
+    --color: #007bff; /* Warna teks saat normal */
+    --background: transparent; /* Background transparan */
+    --background-hover: #007bff; /* Background saat hover */
+    --color-hover: #ffffff; /* Warna teks saat hover */
+    --border-color-hover: #007bff; /* Warna border saat hover */
+    --border-width-hover: 2px; /* Ketebalan border saat hover */
+    --border-radius: 30px; /* Radius border */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transisi warna saat hover */
+  }
+  
+  ion-button:hover {
+    --background: var(--background-hover); /* Warna background saat hover */
+    --color: var(--color-hover); /* Warna teks saat hover */
+    --border-color: var(--border-color-hover); /* Warna border saat hover */
+  }
+  .read-more-button {
+    --border-width: 2px; /* Ketebalan border */
+    --border-color: transparent; /* Warna border transparan */
+    --color: #007bff; /* Warna teks saat normal */
+    --background: transparent; /* Background transparan */
+    --background-hover: #007bff; /* Background saat hover */
+    --color-hover: #ffffff; /* Warna teks saat hover */
+    --border-color-hover: #007bff; /* Warna border saat hover */
+    --border-width-hover: 2px; /* Ketebalan border saat hover */
+    --border-radius: 30px; /* Radius border */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transisi warna saat hover */
+  }
+  
+  .read-more-button:hover {
+    background-color: var(--background-hover); /* Warna background saat hover */
+    color: var(--color-hover); /* Warna teks saat hover */
+    border-color: var(--border-color-hover); /* Warna border saat hover */
+    border-radius: var(--border-radius); /* Mengikuti radius border normal */
+  }
+    
+  

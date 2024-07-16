@@ -1,27 +1,128 @@
-#container {
+/* Background putih untuk body */
+.content-background {
+  --background: #ffffff;
+}
+
+.page-title {
+  font-size: 24px;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 10px 0;
+  color: #ffffff; /* Warna teks hitam untuk kontras */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.language-select-item {
+  ion-select {
+    --padding-start: 10px; /* Atur padding awal */
+    --padding-end: 10px; /* Atur padding akhir */
+    --min-width: 150px; /* Lebar minimum */
+    color: #ffffff; /* Warna teks hitam */
+    max-width: 200px; /* Batasi lebar maksimum */
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.category-buttons-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  padding-top: 20px;
 
-  color: #8c8c8c;
-
-  margin: 0;
+  @media (max-width: 576px) {
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
 }
 
-#container a {
-  text-decoration: none;
+.category-buttons {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.category-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 2px solid #007bff; /* Border biru */
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #007bff; /* Warna teks biru */
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin: 5px;
+
+  @media (max-width: 576px) {
+    margin: 5px 0;
+  }
+}
+
+.category-button:hover {
+  background-color: #007bff; /* Warna background biru saat hover */
+  color: #ffffff; /* Warna teks putih saat hover */
+  border-color: #007bff; /* Border tetap biru saat hover */
+}
+
+.search-bar-container {
+  padding: 10px;
+}
+
+ion-searchbar {
+  --background: #f4f4f4;
+  --placeholder-color: #000000;
+  --color: #000000;
+  --icon-color: #007bff;
+  border-radius: 10px;
+  border: 1px solid #007bff; /* Border biru */
+}
+
+.article-grid {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.article-card {
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Memastikan semua card memiliki tinggi yang sama */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  border: 1px solid #dddddd; /* Border abu-abu muda */
+  border-radius: 10px; /* Border-radius untuk card */
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+ion-img {
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+ion-card-title {
+  font-size: 18px;
+  color: #000000; /* Warna teks title hitam */
+}
+
+ion-card-content p {
+  color: #333333; /* Warna teks deskripsi hitam */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

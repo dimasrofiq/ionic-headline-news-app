@@ -1,0 +1,60 @@
+.page-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    color: #ffffff; /* Warna teks hitam untuk kontras */
+  }
+  
+.favorite-list {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 20px; /* Padding agar konten tidak terlalu dekat dengan tepi */
+  }
+  
+  .favorite-list ion-card {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    color: #333333; /* Warna teks */
+    border-radius: 10px; /* Radius border */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Outline shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi transformasi dan shadow */
+    position: relative; /* Position relative untuk menyesuaikan tombol hapus */
+  }
+  
+  .favorite-list ion-card:hover {
+    transform: translateY(-5px); /* Efek melayang naik saat di-hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih kuat saat di-hover */
+  }
+  
+  .favorite-list ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Warna teks judul */
+  }
+  
+  .favorite-list ion-card-content {
+    color: #333333; /* Warna teks konten */
+    padding: 10px; /* Padding konten */
+    margin-bottom: 20px; /* Jarak bawah konten */
+  }
+  
+  .favorite-list ion-card-content p {
+    color: #666666; /* Warna teks paragraf */
+    margin-bottom: 10px; /* Jarak bawah paragraf */
+  }
+  
+  .favorite-list .remove-button {
+    --color: #ffffff; /* Warna teks tombol */
+    --background: red; /* Background transparan */
+    --border-width: 0; /* Ketebalan border */
+    --border-width-hover: 0; /* Ketebalan border saat hover */
+    --border-radius: 20%; /* Radius border menjadi bulat */
+    text-align: justify;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Transisi warna saat hover */
+    margin-top: 10px; /* Jarak atas dari teks deskripsi */
+  }
+  
+  .favorite-list .remove-button:hover {
+    color: var(--color-hover); /* Warna teks saat hover */
+    border-color: var(--border-color-hover); /* Warna border saat hover */
+    transform: scale(1.1); /* Efek scaling pada hover */
+  }
+  

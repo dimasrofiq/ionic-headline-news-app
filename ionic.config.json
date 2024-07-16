@@ -1,5 +1,13 @@
 {
-  "name": "newsApp",
-  "integrations": {},
-  "type": "angular"
+  "name": "myapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/v2",
+      "proxyUrl": "https://newsapi.org/v2"
+    }
+  ]
 }

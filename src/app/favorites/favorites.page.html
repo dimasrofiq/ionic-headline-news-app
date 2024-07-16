@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="page-title">Favorite News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list class="favorite-list" *ngIf="favoriteArticles.length > 0">
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let article of favoriteArticles">
+        <ion-card>
+          <ion-img [src]="article.image"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{ article.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{ article.description }}</p>
+          </ion-card-content>
+          <ion-button fill="clear" class="remove-button" (click)="removeFromFavorites(article)">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+  <ion-list *ngIf="favoriteArticles.length === 0">
+    <ion-item>
+      <ion-label>
+        <h2>No Favorites</h2>
+        <p>Start adding some articles to your favorites list!</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
